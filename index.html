@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geeks Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light rounded shadow gl-navbar" ">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <img src="https://s3-alpha-sig.figma.com/img/14e8/8737/4faa6bec1eb2027355c10e2a2c9eddb5?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=A8ohrwmg3hl9VGN2ma46jYUyC3Fv-T634KzxA36HSPBdykj5OJB8vQbMdio0hQFyqaifUyGuCPKDSYn11aLujZK9MvdNOFnYIxgUpdKQJXFP5K1KuYYfzEzAdDVzjrULfiscfceaaHwFwkM7JhD--gRg3AkxGPsWmkXcLl8KGbC7MfVfEhW6MPeIuMh2NaG4K3J3PQhTyKv5p-PwJfZq6qrNGZdDhTqrWUXwUTbIC~kAKZoa1HPvTif9z3COaAwVfiEmOmQqrrkXu9WBKmjV7hBJ3aMNvvuyMbvBBNZcUELIXeDdRnNfin8DQHj81tV803SDMFoeXyEYUnwzHKx50Q__"
+                    alt="" width="100px">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto" style="gap: 30px; font-weight: bold;">
+                        <li class="nav-item"><a class="nav-link" href="#">ホームページ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">サービス</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">会社</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">価格設定</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="btn btn11 d-none d-lg-block">資料請求</button> <!-- Button only visible on larger screens -->
+        </div>
+    </header>
+
+
+    <!-- Main Section -->
+    <section class="container my-5 mb-5">
+        <!-- Section 1 -->
+        <div class="row" >
+            <div class="col-lg-6 col-md-12 mt-4">
+                <h2 class="mt-3 mb-5">今の販売管理ツールでお悩みなら</h2>
+                <p class="mb-5"><strong><button class="btn" id="topBtn">月額 3.3</button> 万円から使える</strong></p>
+                <div class="alert alert-warning mb-5">クラウドソリューション</div>
+                <img  src="https://s3-alpha-sig.figma.com/img/d27c/52a9/f8c1722d151cee38a4257f43ee2ce55e?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PLccVX8EPueKquRyFKrNX-SIodtifcpBaYqZ260efP8gantA4-dcJNtW5lDay5P6oV1MWMiTSHjNchSOlmjxNNRH9-ADOHp~iM~x3Cezp~HqaZdbRGN3FZ~LGyOxN8NtACpVCm5ma6qce5mpBDG2czGeAJ5MFOaoJmozUZPxC0-YaRX8o5tUmRsVapxzV4Ms3IUrISGJF3aODFpm910ksLYH3EEDzgQ7FKTMVu7IVz~zsNddLJNmRS5l7r9y-Aeo9xCJkJZdnL6dmIpIb9kvFXRkW1DQkfe3VClPYo8odJs5jRHH~RpvHK88BXbNjSVvXu5V22iIzwW61I0YlguKTQ__"
+                    alt="" class="img-fluid" width="400px">
+                <button class="btn btn-warning mt-5 p-3" id="pastBtn">資料請求・導入のご相談はこちらから　▶</button>
+            </div>
+            <div class="col-lg-6 col-md-12 text-center">
+                <img style="margin-top: 50px;" id="img1"
+                    src="https://s3-alpha-sig.figma.com/img/7124/d4d1/a61aac828a36fc783af3d8b5689e5481?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qsQkEmt~QS45bQWR4AiKc28ks0sTge46q4pKQNF8x7yxbWbN7oHXypxOC019FGr7Vturb~dTWvlx6-xExzrkF~2G5f4FEYEQXTssdLTGwZabWyZTQBfsvo2zxaG6LtyAtLl6PrZs08j76qWJjZNXiswTSK2qMh9mP1jAQgFvRPx8IH8p4KMb2P6y0CTcIoWerAyBRaXRUvwvq7Lr--8fOV6fhm2nvC9Uybs9pxgjQDJCJYVLyFdFNI-FLen3cRzJ3~Aa0td5bTB1kGNuLfh0u~Hs~~iR1eHXJHMKv3Zs01fJAoztEZTAUjYl5wAeM1gLSY023TZ5EhJIl5-yyFBHZA__"
+                    alt="Geeks Sign" class="img-fluid rounded">
+            </div>
+        </div>
+
+
+        <!-- Section 2 -->
+        <div class="section2">
+            <div style="padding-top: 50px;">
+                <h3>販売管理ツールはどれも同じように見えるけど、</h3>
+                <h3> 実際に導入してみたらちょっとした不満が山積み。。。</h3>
+            </div>
+
+            <div class="row text-center container justify-content-between mt-5">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center bg-body-tertiary rounded">
+                        <div class="card-header text-white">費用のお悩み</div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li>毎月のライセンス料が高くて辛い</li>
+                                <li>今からツールを変えようとすると、データ移行だけで何百万と必要になってしまう</li>
+                                <li>システム改修は費用が高い</li>
+                                <li>ライセンス料以外にサーバー維持費など毎月の支払いが高くなっている</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center bg-body-tertiary rounded">
+                        <div class="card-header text-white">費用のお悩み</div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li>毎月のライセンス料が高くて辛い</li>
+                                <li>今からツールを変えようとすると、データ移行だけで何百万と必要になってしまう</li>
+                                <li>システム改修は費用が高い</li>
+                                <li>ライセンス料以外にサーバー維持費など毎月の支払いが高くなっている</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card text-center bg-body-tertiary rounded">
+                        <div class="card-header text-white">費用のお悩み</div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li>毎月のライセンス料が高くて辛い</li>
+                                <li>今からツールを変えようとすると、データ移行だけで何百万と必要になってしまう</li>
+                                <li>システム改修は費用が高い</li>
+                                <li>ライセンス料以外にサーバー維持費など毎月の支払いが高くなっている</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Section 3 -->
+        <div class="section3 mt-5">
+            <div class="text-center pt-3">
+                <h3>私たちは中小企業のシステムを50年支援し続けてきました。</h3>
+            </div>
+            <div class="rounded shadow">
+                <div class="row shadow rounded">
+                    <div class="col-1 col-md-3 cars2">
+                        <button class="btn">01</button>
+                    </div>
+                </div>
+                <div class="row pb-5">
+                    <div class="col text-center" style="padding-top: 20vh;">
+                        <h4>法制度改正やシステムのバージョンアップによる、新たなシステム改変費用が不要です。 サブスクリプション型の為、長期的な利用・コスト管理も可能です。</h4>
+                    </div>
+                    <div class="col" style="padding-top: 15vh;">
+                        <table class="table table-bordered" style="width: 100%;">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="bg-body-secondary text-center">モデルプラン</th>
+                                    <th scope="col" style="background-color: #e9ad88; color: white;">5ユーザー</th>
+                                    <th scope="col" style="background-color: #863126; color: white;">10ユーザー</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="bg-body-secondary text-center">初期費用</th>
+                                    <td>¥350,450</td>
+                                    <td>¥400,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="bg-body-secondary text-center">月額利用料</th>
+                                    <td>¥350,450</td>
+                                    <td>¥50,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-5 section33">
+                <div class="row">
+                    <!-- First Box -->
+                    <div class="col-md-4 mb-4">
+                        <div class="text-center shadow-sm p-3 bg-white rounded">
+                            <h5 class="card-title text-white py-2 px-3 rounded cardheader"><button
+                                    class="btn">02</button> 導入後も安心のサポート体制</h5>
+                            <p class="card-text mt-3">サポートセンターでわからないこと、ご相談はいつでも受付。簡単操作、2重入力不要でミスを。</p>
+                        </div>
+                    </div>
+                    <!-- Second Box -->
+                    <div class="col-md-4 mb-4">
+                        <div class="text-center shadow-sm p-3 bg-white rounded">
+                            <h5 class="card-title text-white py-2 px-3 rounded cardheader"><button
+                                    class="btn">03</button> 御社独自にカスタマイズ</h5>
+                            <p class="card-text mt-3">どうしても避けられない運用や、追加機能のご要望にもお応えできます。</p>
+                        </div>
+                    </div>
+                    <!-- Third Box -->
+                    <div class="col-md-4 mb-4">
+                        <div class="text-center shadow-sm p-3 bg-white rounded">
+                            <h5 class="card-title text-white py-2 px-3 rounded cardheader"><button
+                                    class="btn">04</button> クラウド管理なので安心</h5>
+                            <p class="card-text mt-3">クラウドサービスの為、サーバー維持管理が導入会社様では不要</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4 -->
+
+        <div class="section4">
+            <h3 class="text-center pt-5" style="font-weight: 700;">ー ソルクラでできるコストカット ー</h3>
+            <div class="row mt-3">
+                <div class="col rounded shadow ms-2 mb-4">
+                    <div class="card-header">
+                        <h5 class="text-center">毎月手動で送っていた請求書送付を自動化</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="text-center" style="font-weight: 700;">年100万円の削減</h6>
+                        <div class="d-flex mt-5 justify-content-around align-items-center">
+                            <!-- First Box -->
+                            <div>
+                                <div class="mini-card-header">
+                                    <p class="text-center text-white p-2" style="font-weight: 700;">追加10時間</p>
+                                </div>
+                                <div class="mini-card-body text-center">
+                                    <p>作業時間</p>
+                                    <p>30時間</p>
+                                </div>
+                            </div>
+
+                            <!-- Arrow Icon -->
+                            <div class="arrow-icon">
+                                <span>&#x3e;</span> <!-- HTML code for the ">" symbol -->
+                            </div>
+
+                            <!-- Second Box -->
+                            <div>
+                                <div class="mini-card-body text-center">
+                                    <p>作業時間</p>
+                                    <p>30時間</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col rounded shadow ms-2 mb-4">
+                    <div class="card-header">
+                        <h5 class="text-center">毎月手動で送っていた請求書送付を自動化</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="text-center" style="font-weight: 700;">年100万円の削減</h6>
+                        <div class="d-flex mt-5 justify-content-around align-items-center">
+                            <!-- First Box -->
+                            <div>
+                                <div class="mini-card-header">
+                                    <p class="text-center text-white p-2" style="font-weight: 700;">追加10時間</p>
+                                </div>
+                                <div class="mini-card-body text-center">
+                                    <p>作業時間</p>
+                                    <p>30時間</p>
+                                </div>
+                            </div>
+
+                            <!-- Arrow Icon -->
+                            <div class="arrow-icon">
+                                <span>&#x3e;</span> <!-- HTML code for the ">" symbol -->
+                            </div>
+
+                            <!-- Second Box -->
+                            <div>
+                                <div class="mini-card-body text-center">
+                                    <p>作業時間</p>
+                                    <p>30時間</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 pb-5">
+                <div class="col rounded shadow ms-2 mb-4">
+                    <div class="card-header">
+                        <h5 class="text-center">毎月手動で送っていた請求書送付を自動化</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="text-center" style="font-weight: 700;">年100万円の削減</h6>
+                        <div class="d-flex mt-5 justify-content-around align-items-center">
+                            <!-- First Box -->
+                            <div>
+                                <div class="mini-card-header">
+                                    <p class="text-center text-white p-2" style="font-weight: 700;">追加10時間</p>
+                                </div>
+                                <div class="mini-card-body text-center">
+                                    <p>作業時間</p>
+                                    <p>30時間</p>
+                                </div>
+                            </div>
+
+                            <!-- Arrow Icon -->
+                            <div class="arrow-icon">
+                                <span>&#x3e;</span> <!-- HTML code for the ">" symbol -->
+                            </div>
+
+                            <!-- Second Box -->
+                            <div>
+                                <div class="mini-card-body text-center">
+                                    <p>作業時間</p>
+                                    <p>30時間</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col rounded shadow ms-2 mb-4">
+                    <div class="card-header">
+                        <h5 class="text-center">毎月手動で送っていた請求書送付を自動化</h5>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="text-center" style="font-weight: 700;">年100万円の削減</h6>
+                        <div class="d-flex mt-5 justify-content-around align-items-center">
+                            <!-- First Box -->
+                            <div>
+                                <div class="mini-card-header">
+                                    <p class="text-center text-white p-2" style="font-weight: 700;">追加10時間</p>
+                                </div>
+                                <div class="mini-card-body text-center">
+                                    <p>作業時間</p>
+                                    <p>30時間</p>
+                                </div>
+                            </div>
+
+                            <!-- Arrow Icon -->
+                            <div class="arrow-icon">
+                                <span>&#x3e;</span> <!-- HTML code for the ">" symbol -->
+                            </div>
+
+                            <!-- Second Box -->
+                            <div>
+                                <div class="mini-card-body text-center">
+                                    <p>作業時間</p>
+                                    <p>30時間</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sectiom 5 -->
+        <div class="section5 mt-5">
+            <div class="row">
+                <h4 class="d-flex align-items-center justify-content-center pt-5 mt-5 text-light">
+                    <span class="me-2">
+                        <button class="btn"
+                            style="width: 100px; background-color: #f8da49; color: #d8663a; border-radius: 10px; font-weight: bold;">
+                            毎月3社限定
+                        </button>
+                    </span>
+                    初期費用無料 キャンペーン実施中
+                </h4>
+                <div class="text-center mt-4">
+                    <button class="btn btn-warning p-3" id="pastBtn1">資料請求・導入のご相談はこちらから　▶</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Section 6 -->
+        <div class="section6">
+
+            <img class="rasm " style="margin-left: 210px;" src="./img/photo_2024-10-22_20-11-14.jpg" alt="">
+            <div class="kotta1">
+                <div class="divv">
+                    <div class="lorem">௹____lorem</div>
+                    <div class="lorembig">
+                        Lorem ipsum dolor, sit vip <br> Lorem ipsum dolor, sit vip <br> Lorem ipsum dolor, sit vip <br>
+                        Lorem ipsum
+                        dolor, sit vip <br>
+                    </div>
+                </div>
+                <div class="divv">
+                    <div class="lorem">௹____lorem</div>
+                    <div class="lorembig">
+                        Lorem ipsum dolor, sit vip <br> Lorem ipsum dolor, sit vip <br> Lorem ipsum dolor, sit vip <br>
+                        Lorem ipsum
+                        dolor, sit vip <br>
+                    </div>
+                </div>
+                <div class="divv">
+                    <div class="lorem">௹____lorem</div>
+                    <div class="lorembig">
+                        Lorem ipsum dolor, sit vip <br> Lorem ipsum dolor, sit vip <br> Lorem ipsum dolor, sit vip <br>
+                        Lorem ipsum
+                        dolor, sit vip <br>
+                    </div>
+                </div>
+            </div>
+            <div class="kotta2">
+                <div class="divv">
+                    <div class="lorem">௹____lorem</div>
+                    <div class="lorembig">
+                        Lorem ipsum dolor, sit vip <br> Lorem ipsum dolor, sit vip <br> Lorem ipsum dolor, sit vip <br>
+                        Lorem ipsum
+                        dolor, sit vip <br>
+                    </div>
+                </div>
+                <div class="divv">
+                    <div class="lorem">௹____lorem</div>
+                    <div class="lorembig">
+                        Lorem ipsum dolor, sit vip <br> Lorem ipsum dolor, sit vip <br> Lorem ipsum dolor, sit vip <br>
+                        Lorem ipsum
+                        dolor, sit vip <br>
+                    </div>
+                </div>
+                <div class="divv">
+                    <div class="lorem">௹____lorem</div>
+                    <div class="lorembig">
+                        Lorem ipsum dolor, sit vip <br> Lorem ipsum dolor, sit vip <br> Lorem ipsum dolor, sit vip <br>
+                        Lorem ipsum
+                        dolor, sit vip <br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kotta3">
+                <div class="divv">
+                    <div class="lorem">௹____lorem</div>
+                    <div class="lorembig">
+                        Lorem ipsum dolor, sit vip <br> Lorem ipsum dolor, sit vip <br> Lorem ipsum dolor, sit vip <br>
+                        Lorem ipsum
+                        dolor, sit vip <br>
+                    </div>
+                </div>
+                <div class="divv">
+                    <div class="lorem">௹____lorem</div>
+                    <div class="lorembig">
+                        Lorem ipsum dolor, sit vip <br> Lorem ipsum dolor, sit vip <br> Lorem ipsum dolor, sit vip <br>
+                        Lorem ipsum
+                        dolor, sit vip <br>
+                    </div>
+                </div>
+                <div class="divv">
+                    <div class="lorem">௹____lorem</div>
+                    <div class="lorembig">
+                        Lorem ipsum dolor, sit vip <br> Lorem ipsum dolor, sit vip <br> Lorem ipsum dolor, sit vip <br>
+                        Lorem ipsum
+                        dolor, sit vip <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rang">
+
+            <div class="section3">
+               <h1>--  Lorem Ipsum  --</h1>
+               <img style="width: 310px;" src="xcx-removebg-preview.png" alt=""> <br>
+              <img src="vc.jpg" alt="">
+            </div>
+        </div>
+        
+        
+        
+        <div class="umumiy" style="      background-color:  #F4F9F8;">
+        <div class="gv" style="">
+            <div class="bir">
+                <button style="margin-left: 5px" class="knopka">EC</button> <br>
+                <img class="shop" src="shopify.jpg" alt="">
+                <img class="shop" src="shopify.jpg" alt="">
+                <img class="shop" src="shopify.jpg" alt="">
+            </div>
+            <div  class="bir">
+                <button style="margin-left: 5px" class="knopka">EC</button> <br>
+                <img class="shop" src="hubspo.jpg" alt="">
+                <img class="shop" src="hubspo.jpg" alt="">
+                <img class="shop" src="hubspo.jpg" alt="">
+            </div>
+            <div class="bir">
+                <button style="margin-left: 5px" class="knopka">CRM</button> <br>
+                <img class="shop" src="free.jpg" alt="">
+                <img class="shop" src="free.jpg" alt="">
+                <img class="shop" src="free.jpg" alt="">
+            </div>
+            <div class="bir">
+                <button style="margin-left: 5px" class="knopka">EC</button> <br>
+                <img class="shop" src="logies.jpg" alt="">
+                <img class="shop" src="logies.jpg" alt="">
+                <img class="shop" src="logies.jpg" alt="">
+            </div>
+        </div>
+        </div>
+        <!-- Section 9 -->
+        <div class="list-tables d-flex">
+            <!-- Existing table -->
+            <table class="table table-bordered  mt-5 pt-5   text-center">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col" style="background-color: #336e6d; color: white;">A社</th>
+                        <th scope="col" style="background-color: #336e6d; color: white;">B社</th>
+                        <th scope="col" style="background-color: #336e6d; color: white;">C社</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">初期費用</th>
+                        <td>¥252,450</td>
+                        <td>¥275,000</td>
+                        <td>¥165,000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">月額</th>
+                        <td>¥252,450</td>
+                        <td>¥275,000</td>
+                        <td>¥165,000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">開発費用</th>
+                        <td>¥252,450</td>
+                        <td>¥275,000</td>
+                        <td>¥165,000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">カスタマイズ性</th>
+                        <td><i class="fa-regular fa-circle"></i></td>
+                        <td><i class="fa-regular fa-circle"></i></td>
+                        <td><i class="fa-regular fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">基本機能</th>
+                        <td><i class="fa-regular fa-circle"></i></td>
+                        <td><i class="fa-regular fa-circle"></i></td>
+                        <td><i class="fa-regular fa-circle"></i></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">外部連携</th>
+                        <td><i class="fa-regular fa-circle"></i></td>
+                        <td><i class="fa-regular fa-circle"></i></td>
+                        <td><i class="fa-regular fa-circle"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Image Table -->
+            <div class="image-table mt-5">
+                <img src="./img/image.png" alt="Table Image" style="width: 100%;">
+            </div>
+        </div>
+
+        <!-- Section 10 -->
+        <div class="section5 mt-5">
+            <div class="row">
+                <h4 class="d-flex align-items-center justify-content-center pt-5 mt-5 text-light">
+                    <span class="me-2">
+                        <button class="btn"
+                            style="width: 100px; background-color: #f8da49; color: #d8663a; border-radius: 10px; font-weight: bold;">
+                            毎月3社限定
+                        </button>
+                    </span>
+                    初期費用無料 キャンペーン実施中
+                </h4>
+                <div class="text-center mt-4">
+                    <button class="btn btn-warning p-3" id="pastBtn1">資料請求・導入のご相談はこちらから　▶</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="rasmmmm   ">
+            <img style="margin-left: 300px; margin-bottom: 40px;" src="cccccc.jpg" alt="">
+            
+      </div>
+
+        <!-- Section 11 -->
+        <div style=" background: #F4F9F8">
+            <h1 class="text-center pt-5 mt-5">ー 導入事例 ー</h1>
+            <div class="cardde" style="width: 90%; padding-left: 130px;margin-top: 40px; margin-bottom: 40px;;
+">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card" style="width: 100% ;border:solid 1px rgb(129, 128, 128)">
+                            <img src="https://s3-alpha-sig.figma.com/img/a46d/0afb/0390fa9ff2cceb3eb63b5c2a96461c1e?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Thfzsgqohu1OCtbPcnTDwOO2utupTStBn21-3pLxoyQX~RLduqxP80eZiH~jbTs3nBEqW6GQwFQ6OCJCdu5gXHZkcaftItt19sD7tG4r6u~zNH53xzLyKEMiFuPWqUm9ChM64~FfKoR4Y4WR-BbFDZ8cdMpx5bJghoTb33jhVy9exbmw5xB~bCo6ZvmMJW33iHAClWRwAJO4iyjjW8v1KwOd~8DCIhqfo0JiR8KGAbdePbxZM1Y0U5Nt9JlXg602OO1XEYc-B4-vpNvPG1Xsbrj5DpcN2I5QF1WyTvUpw1if7vOWaxMPHgoIcZdBQiablRsiILe4IB6AvKIcFyaP1A__"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary" id="carddd">🏁SB Payment Service</a>
+                                <h5 class="card-title">SBペイメントサービス様</h5>
+                                <p class="card-text">コンテンツが入りますコンテンツが入りますコンテンツが入りますコンテンツが入り </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card" style="width: 100%;border:solid 1px rgb(129, 128, 128)">
+                            <img src="https://s3-alpha-sig.figma.com/img/a46d/0afb/0390fa9ff2cceb3eb63b5c2a96461c1e?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Thfzsgqohu1OCtbPcnTDwOO2utupTStBn21-3pLxoyQX~RLduqxP80eZiH~jbTs3nBEqW6GQwFQ6OCJCdu5gXHZkcaftItt19sD7tG4r6u~zNH53xzLyKEMiFuPWqUm9ChM64~FfKoR4Y4WR-BbFDZ8cdMpx5bJghoTb33jhVy9exbmw5xB~bCo6ZvmMJW33iHAClWRwAJO4iyjjW8v1KwOd~8DCIhqfo0JiR8KGAbdePbxZM1Y0U5Nt9JlXg602OO1XEYc-B4-vpNvPG1Xsbrj5DpcN2I5QF1WyTvUpw1if7vOWaxMPHgoIcZdBQiablRsiILe4IB6AvKIcFyaP1A__"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary" id="carddd">🏁SB Payment Service</a>
+                                <h5 class="card-title">SBペイメントサービス様</h5>
+                                <p class="card-text">コンテンツが入りますコンテンツが入りますコンテンツが入りますコンテンツが入り </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card" style="width: 100%;border:solid 1px rgb(129, 128, 128)">
+                            <img src="https://s3-alpha-sig.figma.com/img/a46d/0afb/0390fa9ff2cceb3eb63b5c2a96461c1e?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Thfzsgqohu1OCtbPcnTDwOO2utupTStBn21-3pLxoyQX~RLduqxP80eZiH~jbTs3nBEqW6GQwFQ6OCJCdu5gXHZkcaftItt19sD7tG4r6u~zNH53xzLyKEMiFuPWqUm9ChM64~FfKoR4Y4WR-BbFDZ8cdMpx5bJghoTb33jhVy9exbmw5xB~bCo6ZvmMJW33iHAClWRwAJO4iyjjW8v1KwOd~8DCIhqfo0JiR8KGAbdePbxZM1Y0U5Nt9JlXg602OO1XEYc-B4-vpNvPG1Xsbrj5DpcN2I5QF1WyTvUpw1if7vOWaxMPHgoIcZdBQiablRsiILe4IB6AvKIcFyaP1A__"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary" id="carddd">🏁SB Payment Service</a>
+                                <h5 class="card-title">SBペイメントサービス様</h5>
+                                <p class="card-text">コンテンツが入りますコンテンツが入りますコンテンツが入りますコンテンツが入り </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                        <div class="card" style="width: 100%;border:solid 1px rgb(129, 128, 128)">
+
+
+                            <img src="https://s3-alpha-sig.figma.com/img/a46d/0afb/0390fa9ff2cceb3eb63b5c2a96461c1e?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Thfzsgqohu1OCtbPcnTDwOO2utupTStBn21-3pLxoyQX~RLduqxP80eZiH~jbTs3nBEqW6GQwFQ6OCJCdu5gXHZkcaftItt19sD7tG4r6u~zNH53xzLyKEMiFuPWqUm9ChM64~FfKoR4Y4WR-BbFDZ8cdMpx5bJghoTb33jhVy9exbmw5xB~bCo6ZvmMJW33iHAClWRwAJO4iyjjW8v1KwOd~8DCIhqfo0JiR8KGAbdePbxZM1Y0U5Nt9JlXg602OO1XEYc-B4-vpNvPG1Xsbrj5DpcN2I5QF1WyTvUpw1if7vOWaxMPHgoIcZdBQiablRsiILe4IB6AvKIcFyaP1A__"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-primary" id="carddd">🏁SB Payment Service</a>
+                                <h5 class="card-title">SBペイメントサービス様</h5>
+                                <p class="card-text">コンテンツが入りますコンテンツが入りますコンテンツが入りますコンテンツが入り
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+<!-- fsdd -->
+
+<div class="mt-5 p-5 " style="background-color: #fcf5f0; font-weight: 700;">
+    <div>
+        <h3 class="text-center">ー 導入事例 ー</h3>
+    </div>
+    <div style="background-color: white;" class="py-2">
+        <div class="ms-5 mt-5">
+            <h3>お問い合わせ内容</h3>
+            <p>お問い合わせには、以下の必須項目の入力をお願いいたします。</p>
+            <div class="row mt-3">
+                <div class="col">
+                    <p>姓</p>
+                    <input type="text" style=" background-color: #f6f6f6;" class="form-control">
+                </div>
+                <div class="col">
+                    <p>姓</p>
+                    <input type="text" style=" background-color: #f6f6f6;" class="form-control">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <p>会社・組織名</p>
+                    <input type="text" style=" background-color: #f6f6f6;" class="form-control">
+                </div>
+                <div class="col">
+                    <p>メールアドレス</p>
+                    <input type="text" style=" background-color: #f6f6f6;" class="form-control">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col">
+                    <p>メールアドレス</p>
+                    <input type="text" style=" background-color: #f6f6f6;" class="form-control">
+                </div>
+                <div class="col">
+                    <p>電話番号</p>
+                    <input type="text" style=" background-color: #f6f6f6;" class="form-control">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container mt-5">
+            <input type="text" style="height:150px; background-color: #f6f6f6;" class="form-control">
+        </div>
+        <div style="margin-top: 50px; font-weight: bold;" class="container">
+            <h3>個人情報の取り扱いについて</h3>
+            <h4>確認欄</h4>
+
+            <div class="mt-5">
+                <p>個人情報の取扱いについて、同意の上送信します。原則としていただいた個人情報は、第三者に提供することはございません。0</p>
+                <p>当社の個人情報保護に関する取り組みについては、プライバシーポリシーの個人情報の取り扱いについて  をご覧ください。以上の個人情報の利用目的等にご同意いただける場合は、入力内容を送信ください。入力された情報は、当社委託先にて管理されます。</p>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button class="btn btn11 d-none d-lg-block">資料請求</button> <!-- Button only visible on larger screens -->
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+        <!-- Section 12 -->
+
+
+        <footer class="">
+            <div class="row text-white">
+
+                <!-- 1 -->
+                <div class="col ms-5  mt-5 ">
+                    <div class="row ">
+                        <p class="">TOP</p>
+                    </div>
+                    <div class="row ">
+                        <p class="">インフォメーション</p>
+                    </div>
+                    <div class="row ">
+                        <p class="">導入事例／資料</p>
+                    </div>
+                    <div class="row ">
+                        <p class="">お役立ちブログ</p>
+                    </div>
+                    <div class="row ">
+                        <p class="">ITビジネスパートナー募集</p>
+                    </div>
+                    <div class="row ">
+                        <p class="">お問い合わせ</p>
+                    </div>
+                    <div class="row ">
+                        <p class="">メールマガジン登録</p>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="col ms-5  mt-5 ">
+                    <div class="row ">
+                        <p class="">サービス</p>
+                    </div>
+                    <div class="row ">
+                        <p class="">コンサルティング</p>
+                    </div>
+                    <div class="row ">
+                        <p class="">システム／クラウド開発</p>
+                    </div>
+                    <div class="row ">
+                        <p class="">お役立ちブログ</p>
+                    </div>
+                    <div class="row ">
+                        <p class="">ＡＩ／クラウド製品</p>
+                    </div>
+
+                </div>
+
+                <!-- 3 -->
+                <div class="col ms-5  mt-5 ">
+                    <div class="row ">
+                        <p class="">インフォメーション
+                        </p>
+                    </div>
+                    <div class="row ">
+                        <p class=""> 導入事例／資料
+                        </p>
+                    </div>
+                    <div class="row ">
+                        <p class="">導入事例／資料</p>
+                    </div>
+                    <div class="row ">
+                        <p class="">お役立ちブログ</p>
+                    </div>
+                    <div class="row ">
+                        <p class="">ITビジネスパートナー募集</p>
+                    </div>
+                    <div class="row ">
+                        <p class="">お問い合わせ</p>
+                    </div>
+
+
+                </div>
+
+                <!-- 4 -->
+                <div class="col ms-5  mt-5 ">
+
+                    <div class="row ">
+                        <p class="">ITビジネスパートナー募集</p>
+                    </div>
+                    <div class="row ">
+                        <p class="">お問い合わせ</p>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="col ms-5  mt-5 ">
+                    <div class="row ">
+                        <img src="https://s3-alpha-sig.figma.com/img/7c50/7f0d/70d59871153487aa723b639793c4a7bf?Expires=1730678400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GF0eto32B60f0bKmUMD4e59dtgGVgXPKZWTBFIg4FmHZAgHolH0-NcTMSda-s~zAnLJ7Cz6S1xPnZGdbZxYCaBqxuNXoNagWEdqCjV0VmQqksjwPM27yFPr7gFJT8pGK5vPN8W8Bxnj6jnW~~XkFHQV-~xwVwZwEHeZWW7MPszqIsq7SrlJ8FLSRV4aRLcZqqCwlw9sA~J3CgxLC7cqdpMINQvQDmmb25nRMidjN4fjOzcaEL5UmMVaqeRR0ZCOfjgPUfP43zG9pK4o8B6neS3FzWi247BvEjL-tewj8PYCIDVi6Ymg9kde82UFKFejtwTBpsIgjK8lK6Wj9VmrsBA__"
+                            alt="" style="width: 100px;">
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-telegram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
